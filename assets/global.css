@@ -1,0 +1,53 @@
+/* Variabel global */
+:root {
+  --font-seriff: "seriff", serif;
+  --color-primary: #3b68f0;
+  --color-secondary: #0f172a;
+  --color-text: #1f2937;
+  --color-muted: #64748b;
+  --color-surface: #ffffff;
+  --font-heading: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  --font-body: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  --radius: 8px;
+  --space: 16px;
+}
+
+/* Dasar (sama dengan pratinjau Page Maker) */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  line-height: 1.5;
+  background: #fff;
+}
+
+img {
+  max-width: 100%;
+}
+
+/* Tautan "Lewati ke konten": tersembunyi sampai difokus dengan keyboard */
+.owd-skip {
+  position: absolute;
+  left: 12px;
+  top: -64px;
+  z-index: 10000;
+  padding: 10px 16px;
+  border-radius: 8px;
+  background: #111827;
+  color: #ffffff;
+  font: 600 14px/1.2 system-ui, sans-serif;
+  text-decoration: none;
+}
+.owd-skip:focus {
+  top: 12px;
+  outline: 3px solid #f59e0b;
+  outline-offset: 2px;
+}

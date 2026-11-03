@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cara Pesan — Toko Online — Kopi Senja</title>
+  <meta name="description" content="Kirim nama produk, varian, jumlah, dan alamat. Kami membalas dengan total harga dan ongkos kirim." />
+  <meta name="robots" content="index, follow" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Toko Online — Kopi Senja" />
+  <meta property="og:locale" content="id_ID" />
+  <meta property="og:title" content="Cara Pesan — Toko Online — Kopi Senja" />
+  <meta property="og:description" content="Kirim nama produk, varian, jumlah, dan alamat. Kami membalas dengan total harga dan ongkos kirim." />
+  <meta name="twitter:card" content="summary" />
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="assets/global.css" />
+  <link rel="stylesheet" href="assets/cara-pesan.css" />
+  <script>(function () {
+  var P = "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20400%20300%22%20preserveAspectRatio%3D%22xMidYMid%20meet%22%3E%3Crect%20width%3D%22400%22%20height%3D%22300%22%20fill%3D%22%23eef1f5%22%2F%3E%3Cg%20fill%3D%22none%22%20stroke%3D%22%2394a3b8%22%20stroke-width%3D%226%22%20stroke-linejoin%3D%22round%22%3E%3Crect%20x%3D%22158%22%20y%3D%22114%22%20width%3D%2284%22%20height%3D%2272%22%20rx%3D%229%22%2F%3E%3C%2Fg%3E%3Cpath%20d%3D%22M161%20183%20L186%20152%20L203%20170%20L215%20158%20L239%20183%20Z%22%20fill%3D%22%2394a3b8%22%2F%3E%3Ccircle%20cx%3D%22219%22%20cy%3D%22134%22%20r%3D%228%22%20fill%3D%22%2394a3b8%22%2F%3E%3C%2Fsvg%3E";
+  function fix(img) {
+    if (img.getAttribute("src") === P) return;
+    img.removeAttribute("srcset");
+    img.setAttribute("data-img-placeholder", "");
+    img.style.backgroundColor = "#eef1f5";
+    img.src = P;
+  }
+  function scan(root) {
+    var list = root.querySelectorAll ? root.querySelectorAll("img") : [];
+    for (var i = 0; i < list.length; i++) if (!list[i].getAttribute("src")) fix(list[i]);
+    if (root.tagName === "IMG" && !root.getAttribute("src")) fix(root);
+  }
+  document.addEventListener("error", function (e) {
+    var t = e.target;
+    if (t && t.tagName === "IMG") fix(t);
+  }, true);
+  function start() {
+    scan(document);
+    if (!window.MutationObserver) return;
+    new MutationObserver(function (records) {
+      for (var i = 0; i < records.length; i++) {
+        var r = records[i];
+        if (r.type === "attributes") {
+          if (r.target.tagName === "IMG" && !r.target.getAttribute("src")) fix(r.target);
+          else if (r.target.tagName === "IMG" && r.target.getAttribute("src") !== P) {
+            r.target.removeAttribute("data-img-placeholder");
+            r.target.style.backgroundColor = "";
+          }
+        } else for (var j = 0; j < r.addedNodes.length; j++) if (r.addedNodes[j].nodeType === 1) scan(r.addedNodes[j]);
+      }
+    }).observe(document.documentElement, { subtree: true, childList: true, attributes: true, attributeFilter: ["src"] });
+  }
+  if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", start);
+  else start();
+})();</script>
+</head>
+<body>
+  <a class="owd-skip" href="#konten">Lewati ke konten</a>
+  <main id="konten" class="page-cara-pesan">
+    <header class="page-cara-pesan__box-1">
+      <div class="page-cara-pesan__box-2">
+        <h4 class="page-cara-pesan__text-1">Kopi Senja</h4>
+        <div class="page-cara-pesan__box-3">
+          <nav class="page-cara-pesan__menu-1" aria-label="Navigasi">
+            <input class="page-cara-pesan__menu-1__toggle" type="checkbox" id="page-cara-pesan__menu-1-toggle" aria-label="Buka menu" />
+            <label class="page-cara-pesan__menu-1__burger" for="page-cara-pesan__menu-1-toggle" aria-hidden="true">
+              <span></span>
+              <span></span>
+              <span></span>
+            </label>
+            <ul class="page-cara-pesan__menu-1__list">
+              <li class="page-cara-pesan__menu-1__item">
+                <a class="page-cara-pesan__menu-1__link" href="index.html" data-pm-page="1793705561878-oxe3ofg">Beranda</a>
+              </li>
+              <li class="page-cara-pesan__menu-1__item">
+                <a class="page-cara-pesan__menu-1__link" href="detail-produk.html" data-pm-page="1793705561913-wsg22mt">Detail Produk</a>
+              </li>
+              <li class="page-cara-pesan__menu-1__item">
+                <a class="page-cara-pesan__menu-1__link" aria-current="page" href="cara-pesan.html" data-pm-page="1793705561962-ewdbqbz">Cara Pesan</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <section class="page-cara-pesan__box-4">
+      <div class="page-cara-pesan__box-5">
+        <p class="page-cara-pesan__text-2">Cara pesan</p>
+        <h1 class="page-cara-pesan__text-3">Pesan mudah lewat WhatsApp atau email</h1>
+        <p class="page-cara-pesan__text-4">Kirim nama produk, varian, jumlah, dan alamat. Kami membalas dengan total harga dan ongkos kirim.</p>
+      </div>
+      <div class="page-cara-pesan__box-6">
+        <div class="page-cara-pesan__box-7">
+          <h3 class="page-cara-pesan__text-5">WhatsApp</h3>
+          <p class="page-cara-pesan__text-6">+62 812 0000 5678</p>
+          <a href="https://wa.me/6281200005678" class="page-cara-pesan__anchor-1">Chat sekarang</a>
+        </div>
+        <div class="page-cara-pesan__box-8">
+          <h3 class="page-cara-pesan__text-7">Email</h3>
+          <p class="page-cara-pesan__text-8">order&#64;kopisenja.example</p>
+          <a href="mailto:order&#64;kopisenja.example" class="page-cara-pesan__anchor-2">Kirim email</a>
+        </div>
+      </div>
+      <div class="page-cara-pesan__box-9">
+        <a href="index.html" class="page-cara-pesan__anchor-3">Kembali ke katalog</a>
+      </div>
+    </section>
+    <footer class="page-cara-pesan__box-10">
+      <div class="page-cara-pesan__box-11">
+        <div class="page-cara-pesan__box-12">
+          <h4 class="page-cara-pesan__text-9">Kopi Senja</h4>
+          <p class="page-cara-pesan__text-10">Kopi pilihan dari petani Nusantara, disangrai setiap minggu.</p>
+        </div>
+        <div class="page-cara-pesan__box-13">
+          <p class="page-cara-pesan__text-11">Belanja</p>
+          <ul class="page-cara-pesan__list-1">
+            <li>Biji kopi</li>
+            <li>Alat seduh</li>
+            <li>Camilan</li>
+          </ul>
+        </div>
+        <div class="page-cara-pesan__box-14">
+          <p class="page-cara-pesan__text-12">Bantuan</p>
+          <ul class="page-cara-pesan__list-2">
+            <li>Cara pesan</li>
+            <li>Pengiriman</li>
+            <li>WhatsApp +62 812 0000 5678</li>
+          </ul>
+        </div>
+      </div>
+      <div class="page-cara-pesan__box-15">
+        <p class="page-cara-pesan__text-13">© 2026 Kopi Senja. Harga dan produk di template ini adalah contoh.</p>
+      </div>
+    </footer>
+  </main>
+</body>
+</html>

@@ -1,0 +1,884 @@
+/* Variabel global */
+:root {
+  --font-seriff: "seriff", serif;
+  --color-primary: #3b68f0;
+  --color-secondary: #0f172a;
+  --color-text: #1f2937;
+  --color-muted: #64748b;
+  --color-surface: #ffffff;
+  --font-heading: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  --font-body: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  --radius: 8px;
+  --space: 16px;
+}
+
+/* Layout */
+.page-cara-pesan {
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  align-items: stretch;
+  background: #ffffff;
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+}
+
+.page-cara-pesan__box-1 {
+  box-sizing: border-box;
+  display: block;
+  padding: 18px 24px;
+  background: #ffffff;
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+}
+
+.page-cara-pesan__box-2 {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1120px;
+  min-width: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.page-cara-pesan__box-3 {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  align-items: center;
+  justify-content: flex-start;
+  max-width: 100%;
+  min-width: 0;
+}
+
+.page-cara-pesan__box-4 {
+  box-sizing: border-box;
+  display: block;
+  padding: clamp(48px, 32.35px + 4.35vw, 88px) 24px;
+  background: #fffbeb;
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+}
+
+.page-cara-pesan__box-5 {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  align-items: stretch;
+  width: 100%;
+  max-width: 900px;
+  min-width: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.page-cara-pesan__box-6 {
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px;
+  align-items: stretch;
+  justify-items: stretch;
+  width: 100%;
+  max-width: 900px;
+  min-width: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.page-cara-pesan__box-7 {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: flex-start;
+  padding: 28px;
+  background: #ffffff;
+  border: 1px solid #e7e5e4;
+  border-radius: 16px;
+  transition: translate 0.25s ease, box-shadow 0.25s ease;
+  max-width: 100%;
+  min-width: 0;
+}
+
+.page-cara-pesan__box-8 {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: flex-start;
+  padding: 28px;
+  background: #ffffff;
+  border: 1px solid #e7e5e4;
+  border-radius: 16px;
+  transition: translate 0.25s ease, box-shadow 0.25s ease;
+  max-width: 100%;
+  min-width: 0;
+}
+
+.page-cara-pesan__box-9 {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: center;
+  width: 100%;
+  max-width: 900px;
+  min-width: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.page-cara-pesan__box-10 {
+  box-sizing: border-box;
+  display: block;
+  padding: clamp(32px, 25.74px + 1.74vw, 48px) 24px;
+  background: #1c1917;
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+}
+
+.page-cara-pesan__box-11 {
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: minmax(0, 1.4fr) minmax(0, 1fr) minmax(0, 1fr);
+  gap: 32px;
+  align-items: start;
+  justify-items: stretch;
+  width: 100%;
+  max-width: 1120px;
+  min-width: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.page-cara-pesan__box-12 {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: flex-start;
+  max-width: 100%;
+  min-width: 0;
+}
+
+.page-cara-pesan__box-13 {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: flex-start;
+  max-width: 100%;
+  min-width: 0;
+}
+
+.page-cara-pesan__box-14 {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: flex-start;
+  max-width: 100%;
+  min-width: 0;
+}
+
+.page-cara-pesan__box-15 {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  align-items: flex-start;
+  width: 100%;
+  max-width: 1120px;
+  min-width: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (hover: hover) and (prefers-reduced-motion: no-preference) {
+  .page-cara-pesan__box-7:hover {
+    translate: 0 -6px;
+    box-shadow: 0 22px 44px -20px rgba(15, 23, 42, 0.35);
+  }
+
+  .page-cara-pesan__box-8:hover {
+    translate: 0 -6px;
+    box-shadow: 0 22px 44px -20px rgba(15, 23, 42, 0.35);
+  }
+}
+
+@media (max-width: 640px) {
+  .page-cara-pesan__box-6 {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .page-cara-pesan__box-11 {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+
+/* Text — H4 */
+.page-cara-pesan__text-1 {
+  box-sizing: border-box;
+  display: inline-block;
+  margin: 0px 0px 0px 0px;
+  padding: 0px;
+  border: 0px none #1e40af;
+  border-radius: 0px;
+  background: transparent;
+  color: #1c1917;
+  font-family: inherit;
+  font-size: 20px;
+  font-weight: 700;
+  overflow-wrap: break-word;
+  text-align: left;
+  letter-spacing: 0px;
+  text-transform: none;
+  text-decoration: none;
+  cursor: auto;
+  transition: all 150ms ease;
+}
+
+/* Menu — Menu */
+.page-cara-pesan__menu-1 {
+  box-sizing: border-box;
+  max-width: 100%;
+}
+.page-cara-pesan__menu-1__list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 22px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.page-cara-pesan__menu-1__link {
+  display: inline-block;
+  padding: 6px 4px;
+  border-bottom: 2px solid transparent;
+  color: #334155;
+  font-size: 15px;
+  font-weight: 500;
+  text-decoration: none;
+  transition: color 0.2s ease, border-color 0.2s ease;
+}
+.page-cara-pesan__menu-1__link:hover,
+.page-cara-pesan__menu-1__link:focus-visible {
+  color: #b45309;
+}
+.page-cara-pesan__menu-1__link[aria-current="page"] {
+  color: #b45309;
+  border-bottom-color: #b45309;
+}
+.page-cara-pesan__menu-1 {
+  position: relative;
+}
+.page-cara-pesan__menu-1__toggle {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  opacity: 0;
+  pointer-events: none;
+}
+.page-cara-pesan__menu-1__burger {
+  display: none;
+}
+@media (max-width: 1024px) {
+  .page-cara-pesan__menu-1 {
+    /* Hamburger di ujung kanan baris header (setelah tombol CTA). */
+    order: 2;
+    display: flex;
+    justify-content: flex-end;
+  }
+  .page-cara-pesan__menu-1__burger {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+    width: 44px;
+    height: 44px;
+    padding: 0 11px;
+    border-radius: 10px;
+    color: #334155;
+    cursor: pointer;
+    box-sizing: border-box;
+  }
+  .page-cara-pesan__menu-1__burger span {
+    display: block;
+    height: 2px;
+    border-radius: 2px;
+    background: currentColor;
+    transition: transform 0.2s ease, opacity 0.2s ease;
+  }
+  .page-cara-pesan__menu-1__burger:hover {
+    background: color-mix(in srgb, #334155 10%, transparent);
+  }
+  .page-cara-pesan__menu-1__toggle:focus-visible + .page-cara-pesan__menu-1__burger {
+    outline: 2px solid #b45309;
+    outline-offset: 2px;
+  }
+  .page-cara-pesan__menu-1__toggle:checked + .page-cara-pesan__menu-1__burger span:nth-child(1) {
+    transform: translateY(7px) rotate(45deg);
+  }
+  .page-cara-pesan__menu-1__toggle:checked + .page-cara-pesan__menu-1__burger span:nth-child(2) {
+    opacity: 0;
+  }
+  .page-cara-pesan__menu-1__toggle:checked + .page-cara-pesan__menu-1__burger span:nth-child(3) {
+    transform: translateY(-7px) rotate(-45deg);
+  }
+  .page-cara-pesan__menu-1__list {
+    display: none;
+    position: absolute;
+    top: calc(100% + 8px);
+    right: 0;
+    z-index: 60;
+    width: max-content;
+    min-width: 220px;
+    max-width: calc(100vw - 32px);
+    flex-direction: column;
+    align-items: stretch;
+    gap: 2px;
+    padding: 8px;
+    border: 1px solid color-mix(in srgb, #334155 14%, transparent);
+    border-radius: 14px;
+    background: #ffffff;
+    box-shadow: 0 20px 40px -16px rgba(15, 23, 42, 0.35);
+    box-sizing: border-box;
+  }
+  .page-cara-pesan__menu-1__toggle:checked ~ .page-cara-pesan__menu-1__list {
+    display: flex;
+  }
+  .page-cara-pesan__menu-1__link {
+    display: block;
+    padding: 10px 12px;
+    border-bottom: 0;
+    border-radius: 8px;
+  }
+  .page-cara-pesan__menu-1__link:hover {
+    background: color-mix(in srgb, #334155 8%, transparent);
+  }
+  .page-cara-pesan__menu-1__link[aria-current="page"] {
+    background: color-mix(in srgb, #b45309 12%, transparent);
+  }
+}
+
+/* Text — Paragraf */
+.page-cara-pesan__text-2 {
+  box-sizing: border-box;
+  display: inline-block;
+  width: 100%;
+  margin: 0px 0px 0px 0px;
+  padding: 0px;
+  border: 0px none #1e40af;
+  border-radius: 0px;
+  background: transparent;
+  color: #b45309;
+  font-family: inherit;
+  font-size: 13px;
+  font-weight: 700;
+  overflow-wrap: break-word;
+  text-align: center;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  text-decoration: none;
+  cursor: auto;
+  transition: all 150ms ease;
+}
+
+/* Text — H1 */
+.page-cara-pesan__text-3 {
+  box-sizing: border-box;
+  display: inline-block;
+  width: 100%;
+  margin: 0px 0px 0px 0px;
+  padding: 0px;
+  border: 0px none #1e40af;
+  border-radius: 0px;
+  background: transparent;
+  color: #1c1917;
+  font-family: inherit;
+  font-size: clamp(1.688rem, 1.418rem + 1.196vw, 2.375rem);
+  font-weight: 800;
+  overflow-wrap: break-word;
+  text-align: center;
+  letter-spacing: -1px;
+  text-transform: none;
+  text-decoration: none;
+  cursor: auto;
+  transition: all 150ms ease;
+}
+
+/* Text — Paragraf */
+.page-cara-pesan__text-4 {
+  box-sizing: border-box;
+  display: inline-block;
+  width: 100%;
+  margin: 0px 0px 0px 0px;
+  padding: 0px;
+  border: 0px none #1e40af;
+  border-radius: 0px;
+  background: transparent;
+  color: #57534e;
+  font-family: inherit;
+  font-size: 17px;
+  font-weight: 400;
+  overflow-wrap: break-word;
+  text-align: center;
+  letter-spacing: 0px;
+  text-transform: none;
+  text-decoration: none;
+  cursor: auto;
+  transition: all 150ms ease;
+}
+
+/* Text — H3 */
+.page-cara-pesan__text-5 {
+  box-sizing: border-box;
+  display: inline-block;
+  width: 100%;
+  margin: 0px 0px 0px 0px;
+  padding: 0px;
+  border: 0px none #1e40af;
+  border-radius: 0px;
+  background: transparent;
+  color: #1c1917;
+  font-family: inherit;
+  font-size: 20px;
+  font-weight: 700;
+  overflow-wrap: break-word;
+  text-align: left;
+  letter-spacing: 0px;
+  text-transform: none;
+  text-decoration: none;
+  cursor: auto;
+  transition: all 150ms ease;
+}
+
+/* Text — Paragraf */
+.page-cara-pesan__text-6 {
+  box-sizing: border-box;
+  display: inline-block;
+  width: 100%;
+  margin: 0px 0px 0px 0px;
+  padding: 0px;
+  border: 0px none #1e40af;
+  border-radius: 0px;
+  background: transparent;
+  color: #475569;
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 400;
+  overflow-wrap: break-word;
+  text-align: left;
+  letter-spacing: 0px;
+  text-transform: none;
+  text-decoration: none;
+  cursor: auto;
+  transition: all 150ms ease;
+}
+
+/* Anchor / Link — Tombol tautan */
+.page-cara-pesan__anchor-1 {
+  box-sizing: border-box;
+  display: inline-block;
+  margin: 0px 0px 0px 0px;
+  padding: 12px 22px 12px 22px;
+  border: 0px none #1e40af;
+  border-radius: 10px;
+  background: #b45309;
+  color: #ffffff;
+  font-family: inherit;
+  font-size: 15px;
+  font-weight: 600;
+  overflow-wrap: break-word;
+  text-align: center;
+  letter-spacing: 0px;
+  text-transform: none;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 150ms ease;
+}
+
+.page-cara-pesan__anchor-1:hover {
+  background: #78350f;
+  color: #ffffff;
+  border-color: #78350f;
+  transform: none;
+}
+
+/* Text — H3 */
+.page-cara-pesan__text-7 {
+  box-sizing: border-box;
+  display: inline-block;
+  width: 100%;
+  margin: 0px 0px 0px 0px;
+  padding: 0px;
+  border: 0px none #1e40af;
+  border-radius: 0px;
+  background: transparent;
+  color: #1c1917;
+  font-family: inherit;
+  font-size: 20px;
+  font-weight: 700;
+  overflow-wrap: break-word;
+  text-align: left;
+  letter-spacing: 0px;
+  text-transform: none;
+  text-decoration: none;
+  cursor: auto;
+  transition: all 150ms ease;
+}
+
+/* Text — Paragraf */
+.page-cara-pesan__text-8 {
+  box-sizing: border-box;
+  display: inline-block;
+  width: 100%;
+  margin: 0px 0px 0px 0px;
+  padding: 0px;
+  border: 0px none #1e40af;
+  border-radius: 0px;
+  background: transparent;
+  color: #475569;
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 400;
+  overflow-wrap: break-word;
+  text-align: left;
+  letter-spacing: 0px;
+  text-transform: none;
+  text-decoration: none;
+  cursor: auto;
+  transition: all 150ms ease;
+}
+
+/* Anchor / Link — Tombol tautan */
+.page-cara-pesan__anchor-2 {
+  box-sizing: border-box;
+  display: inline-block;
+  margin: 0px 0px 0px 0px;
+  padding: 12px 22px 12px 22px;
+  border: 2px solid #b45309;
+  border-radius: 10px;
+  background: transparent;
+  color: #b45309;
+  font-family: inherit;
+  font-size: 15px;
+  font-weight: 600;
+  overflow-wrap: break-word;
+  text-align: center;
+  letter-spacing: 0px;
+  text-transform: none;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 150ms ease;
+}
+
+.page-cara-pesan__anchor-2:hover {
+  background: #fef3c7;
+  color: #78350f;
+  border-color: #78350f;
+  transform: none;
+}
+
+/* Anchor / Link — Tombol tautan */
+.page-cara-pesan__anchor-3 {
+  box-sizing: border-box;
+  display: inline-block;
+  margin: 0px 0px 0px 0px;
+  padding: 12px 22px 12px 22px;
+  border: 2px solid #b45309;
+  border-radius: 10px;
+  background: transparent;
+  color: #b45309;
+  font-family: inherit;
+  font-size: 15px;
+  font-weight: 600;
+  overflow-wrap: break-word;
+  text-align: center;
+  letter-spacing: 0px;
+  text-transform: none;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 150ms ease;
+}
+
+.page-cara-pesan__anchor-3:hover {
+  background: #fef3c7;
+  color: #78350f;
+  border-color: #78350f;
+  transform: none;
+}
+
+/* Text — H4 */
+.page-cara-pesan__text-9 {
+  box-sizing: border-box;
+  display: inline-block;
+  width: 100%;
+  margin: 0px 0px 0px 0px;
+  padding: 0px;
+  border: 0px none #1e40af;
+  border-radius: 0px;
+  background: transparent;
+  color: #ffffff;
+  font-family: inherit;
+  font-size: 18px;
+  font-weight: 700;
+  overflow-wrap: break-word;
+  text-align: left;
+  letter-spacing: 0px;
+  text-transform: none;
+  text-decoration: none;
+  cursor: auto;
+  transition: all 150ms ease;
+}
+
+/* Text — Paragraf */
+.page-cara-pesan__text-10 {
+  box-sizing: border-box;
+  display: inline-block;
+  width: 100%;
+  margin: 0px 0px 0px 0px;
+  padding: 0px;
+  border: 0px none #1e40af;
+  border-radius: 0px;
+  background: transparent;
+  color: #94a3b8;
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 400;
+  overflow-wrap: break-word;
+  text-align: left;
+  letter-spacing: 0px;
+  text-transform: none;
+  text-decoration: none;
+  cursor: auto;
+  transition: all 150ms ease;
+}
+
+/* Text — Paragraf */
+.page-cara-pesan__text-11 {
+  box-sizing: border-box;
+  display: inline-block;
+  width: 100%;
+  margin: 0px 0px 0px 0px;
+  padding: 0px;
+  border: 0px none #1e40af;
+  border-radius: 0px;
+  background: transparent;
+  color: #ffffff;
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 700;
+  overflow-wrap: break-word;
+  text-align: left;
+  letter-spacing: 0px;
+  text-transform: none;
+  text-decoration: none;
+  cursor: auto;
+  transition: all 150ms ease;
+}
+
+/* List — Daftar */
+.page-cara-pesan__list-1 {
+  box-sizing: border-box;
+  width: 100%;
+  margin: 0;
+  padding: 0px 0px 0px 0px;
+  background: transparent;
+  border: 0px none #e5e7eb;
+  border-radius: 8px;
+  list-style-position: inside;
+  list-style-type: none;
+}
+
+.page-cara-pesan__list-1 li {
+  display: list-item;
+  margin-bottom: 4px;
+  padding: 4px 0px;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 400;
+  color: #cbd5e1;
+  transition: background-color 200ms ease, color 200ms ease;
+}
+
+.page-cara-pesan__list-1 li:last-child {
+  margin-bottom: 0;
+}
+
+/* Text — Paragraf */
+.page-cara-pesan__text-12 {
+  box-sizing: border-box;
+  display: inline-block;
+  width: 100%;
+  margin: 0px 0px 0px 0px;
+  padding: 0px;
+  border: 0px none #1e40af;
+  border-radius: 0px;
+  background: transparent;
+  color: #ffffff;
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 700;
+  overflow-wrap: break-word;
+  text-align: left;
+  letter-spacing: 0px;
+  text-transform: none;
+  text-decoration: none;
+  cursor: auto;
+  transition: all 150ms ease;
+}
+
+/* List — Daftar */
+.page-cara-pesan__list-2 {
+  box-sizing: border-box;
+  width: 100%;
+  margin: 0;
+  padding: 0px 0px 0px 0px;
+  background: transparent;
+  border: 0px none #e5e7eb;
+  border-radius: 8px;
+  list-style-position: inside;
+  list-style-type: none;
+}
+
+.page-cara-pesan__list-2 li {
+  display: list-item;
+  margin-bottom: 4px;
+  padding: 4px 0px;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 400;
+  color: #cbd5e1;
+  transition: background-color 200ms ease, color 200ms ease;
+}
+
+.page-cara-pesan__list-2 li:last-child {
+  margin-bottom: 0;
+}
+
+/* Text — Paragraf */
+.page-cara-pesan__text-13 {
+  box-sizing: border-box;
+  display: inline-block;
+  width: 100%;
+  margin: 0px 0px 0px 0px;
+  padding: 0px;
+  border: 0px none #1e40af;
+  border-radius: 0px;
+  background: transparent;
+  color: #778599;
+  font-family: inherit;
+  font-size: 13px;
+  font-weight: 400;
+  overflow-wrap: break-word;
+  text-align: left;
+  letter-spacing: 0px;
+  text-transform: none;
+  text-decoration: none;
+  cursor: auto;
+  transition: all 150ms ease;
+}
+
+/* Custom CSS */
+/* Grup “Halaman” */
+.page-cara-pesan {
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Text “H4” */
+.page-cara-pesan__text-1 {
+  line-height: 1.3;
+}
+
+/* Row “Row” */
+.page-cara-pesan__box-5 {
+  margin-bottom: 32px;
+}
+
+/* Text “Paragraf” */
+.page-cara-pesan__text-2 {
+  line-height: 1.6;
+}
+
+/* Text “H1” */
+.page-cara-pesan__text-3 {
+  line-height: 1.15;
+}
+
+/* Text “Paragraf” */
+.page-cara-pesan__text-4 {
+  line-height: 1.6;
+}
+
+/* Row “Row 2 Kolom” */
+.page-cara-pesan__box-6 {
+  margin-bottom: 32px;
+}
+
+/* Text “H3” */
+.page-cara-pesan__text-5 {
+  line-height: 1.3;
+}
+
+/* Text “Paragraf” */
+.page-cara-pesan__text-6 {
+  line-height: 1.6;
+}
+
+/* Text “H3” */
+.page-cara-pesan__text-7 {
+  line-height: 1.3;
+}
+
+/* Text “Paragraf” */
+.page-cara-pesan__text-8 {
+  line-height: 1.6;
+}
+
+/* Row “Row Kolom” */
+.page-cara-pesan__box-11 {
+  margin-bottom: 32px;
+}
+
+/* Text “H4” */
+.page-cara-pesan__text-9 {
+  line-height: 1.3;
+}
+
+/* Text “Paragraf” */
+.page-cara-pesan__text-10 {
+  line-height: 1.6;
+}
+
+/* Text “Paragraf” */
+.page-cara-pesan__text-11 {
+  line-height: 1.6;
+}
+
+/* Text “Paragraf” */
+.page-cara-pesan__text-12 {
+  line-height: 1.6;
+}
+
+/* Text “Paragraf” */
+.page-cara-pesan__text-13 {
+  line-height: 1.6;
+}
